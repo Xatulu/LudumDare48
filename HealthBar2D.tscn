@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://HealthBar2D.gd" type="Script" id=1]
+
+[sub_resource type="StreamTexture" id=1]
+flags = 23
+load_path = "res://.import/barHorizontal_green_mid 200.png-a75e5d0ddaca698a370e192b7c42f48a.s3tc.stex"
+
+[node name="HealthBar2D" type="TextureProgress"]
+margin_right = 40.0
+margin_bottom = 40.0
+value = 100.0
+texture_progress = SubResource( 1 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

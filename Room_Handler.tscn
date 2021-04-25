@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Room_Handler.gd" type="Script" id=1]
+
+[node name="Room_Handler" type="Spatial"]
+script = ExtResource( 1 )

@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://EnemySpawner.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Room_Handler.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Game.gd" type="Script" id=3]
+
+[node name="Game" type="Node"]
+script = ExtResource( 3 )
+
+[node name="EnemySpawner" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0 )
+
+[node name="Room_Handler" parent="." instance=ExtResource( 2 )]
+
+[connection signal="set_amount_of_enemies" from="Room_Handler" to="EnemySpawner" method="_set_amount_of_enemies"]
